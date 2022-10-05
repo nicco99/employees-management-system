@@ -23,18 +23,18 @@ npm start - to run the application\
 1. Home/landing page\
    -about us section\
    -contact section\
-   -hero section\
+   -hero section
 2. Admin page\
    -employees full details route \
    -delete employees route\
    -add employees form\
-   -edit employees form\
+   -edit employees form
 
-# github repository\
+# github repository
 
 https://github.com/nicco99/employees-management-system.git
 
-# license\
+# license
 MIT license\
 
 # Copyright
