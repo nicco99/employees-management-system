@@ -1,23 +1,23 @@
 # Employees Management System..
 
 This system is to help Hr manages manage employees in various ways\
-i) Add new employee/
+i) Add new employee\
 ii) Delete fired employee\
 iii) Edit employees details\
 iv) Manage employees leave\
 
 
 # server
- json server used\
+ json server used
    # **to run json server**
 if you don't have json server installed\ 
-   **npm i json-server**\
+  # **npm i json-server**
 if you have json server install go ahead and run\
-**json-server --watch db.json**\
+# **json-server --watch db.json**
 
 # running application
 npm install -to install dependencies\
-npm start - to run the application\
+npm start - to run the application
 
 # pages
 1. Home/landing page\
@@ -35,7 +35,7 @@ npm start - to run the application\
 https://github.com/nicco99/employees-management-system.git
 
 # license
-MIT license\
+MIT license
 
 # Copyright
 Copyright (c) 2022 NICHOLAS GICHOBI
