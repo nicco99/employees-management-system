@@ -43,7 +43,7 @@ function Form() {
           />
         </div>
         <div className="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
             Department:
           </label>
           <input

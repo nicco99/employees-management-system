@@ -2,14 +2,14 @@
   "employees": [
     {
       "id": "1",
-      "full_name": "Nicholas njeru Gichobi",
-      "department": "Developer",
-      "salary": "100000"
+      "full_name": "Nicholas Njeru Gichobi",
+      "department": "Manager",
+      "salary": "100,000"
     },
     {
       "full_name": "Joram wachira",
-      "department": "Water",
-      "salary": "50000",
+      "department": "Water | Management",
+      "salary": "50,000",
       "id": "hR8f2lF"
     },
     {
@@ -19,10 +19,22 @@
       "id": "C5RSTd4"
     },
     {
-      "full_name": "james njenga",
-      "department": "developer",
-      "salary": "100000",
+      "full_name": "James njenga",
+      "department": "Project Manager ",
+      "salary": "90,000",
       "id": "fzcqRVV"
+    },
+    {
+      "full_name": "Isaac mwangi",
+      "department": "Hospitality",
+      "salary": "28000",
+      "id": "EWxr-ch"
+    },
+    {
+      "full_name": "Stella Onyango",
+      "department": "Caretaker",
+      "salary": "10,000",
+      "id": "vVUoeBk"
     }
   ],
   "admins": [
@@ -50,6 +62,12 @@
       "department": "Water",
       "salary": "50000",
       "id": "hR8f2lF"
+    },
+    {
+      "full_name": "Isaac mwangi",
+      "department": "Hospitality",
+      "salary": "28000",
+      "id": "EWxr-ch"
     }
   ]
 }

@@ -18,7 +18,9 @@ function Tr({ emp }) {
   return (
     <tr>
       <td className="p-2">
-        <div  className="cursor-pointer font-medium text-gray-800"><Link to={`${emp.id}`}>{emp.full_name}</Link></div>
+        <div className="cursor-pointer font-medium text-gray-800">
+          <Link to={`${emp.id}`}>{emp.full_name}</Link>
+        </div>
       </td>
       <td className="p-2">
         <div className="text-left">{emp.department}</div>
@@ -28,8 +30,8 @@ function Tr({ emp }) {
       </td>
       <td className="p-2">
         <div className="flex justify-center">
-          <button onClick={() => handleDelete(emp)} className="text-red-500">
-            Delete
+          <button onClick={() => handleDelete(emp)} className="text-red-800">
+            Unemploy
           </button>
         </div>
       </td>
