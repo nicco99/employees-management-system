@@ -1,0 +1,55 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "full_name": "Nicholas njeru Gichobi",
+      "department": "Developer",
+      "salary": "100000"
+    },
+    {
+      "full_name": "Joram wachira",
+      "department": "Water",
+      "salary": "50000",
+      "id": "hR8f2lF"
+    },
+    {
+      "full_name": "Stephen Kinyua",
+      "department": "ICT",
+      "salary": "70000",
+      "id": "C5RSTd4"
+    },
+    {
+      "full_name": "james njenga",
+      "department": "developer",
+      "salary": "100000",
+      "id": "fzcqRVV"
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234"
+    }
+  ],
+  "data": [
+    {
+      "id": "1",
+      "islogged": "true"
+    }
+  ],
+  "leave": [
+    {
+      "full_name": "Stephen Kinyua",
+      "department": "ICT",
+      "salary": "70000",
+      "id": "C5RSTd4"
+    },
+    {
+      "full_name": "Joram wachira",
+      "department": "Water",
+      "salary": "50000",
+      "id": "hR8f2lF"
+    }
+  ]
+}
