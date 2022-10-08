@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
+import employeeContext from "../../Context";
 function ManageLeave() {
   const [leave, setLeave] = useState([]);
-  const [onLeave, setOnLeave] = useState([]);
-  const [update, setUpdate] = useState(true);
+
+  const { onLeave, setOnLeave, update, setUpdate } = useContext(employeeContext);
+
 
   useEffect(() => {
     fetch("http://localhost:3000/employees")
