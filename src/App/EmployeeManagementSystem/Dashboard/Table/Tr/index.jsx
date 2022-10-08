@@ -6,6 +6,7 @@ function Tr({ emp }) {
   const { rerender, setRerender } = useContext(employeeContext);
   const redirect = useNavigate();
   function handleDelete(emp) {
+    
     fetch(`http://localhost:3000/employees/${emp.id}`, {
       method: "DELETE",
       headers: {

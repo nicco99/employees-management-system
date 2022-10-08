@@ -1,6 +1,6 @@
 # Employees Management System..
 
-This system is to help Hr manages manage employees in various ways\
+This system is to help Manager manages manage employees in various ways\
 i) Add new employee\
 ii) Delete fired employee\
 iii) Edit employees details\
@@ -25,15 +25,25 @@ if you have json server install go ahead and run
 npm install -to install dependencies\
 npm start - to run the application
 
+# !!important
+
+Ensure you first run the server since it has no default port set.. it runs on port 3000 on default
+--if port 3000 is on use you can **npx kill-port 3000**
+
 # pages
 
 1.login
--user should login 
+-user should login
+
+default username - admin
+
+default pass - 1234
+
 2. Admin page\
- -employees full details route \
- -delete employees route\
- -add employees form\
- -edit employees form
+   -employees full details route \
+   -delete employees to delete navigate to the view employees page\
+   -add employees form\
+   -edit employees by navigating to view employees
 
 # github repository
 
