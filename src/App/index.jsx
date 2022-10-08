@@ -29,12 +29,12 @@ function App() {
           />
           <Route
             path="dashboard"
-            element={
-              <Dashboard />
-              // isLoggedIn ?
-              // <Dashboard setIsLoggedIn={setIsLoggedIn} />
-              //  :
-              // <h1>please login</h1>
+             element={
+            //   <Dashboard />
+              isLoggedIn ?
+              <Dashboard setIsLoggedIn={setIsLoggedIn} />
+               :
+              <h1>please login</h1>
             }>
             <Route path="" element={<Welcome />} />
             <Route path="leave" element={<ManageLeave />} />                     

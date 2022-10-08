@@ -38,7 +38,7 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
   }
   // page === "About" ? "green" : "",
   return (
-    <div className="bg-teal-50">
+    <div className="bg-teal-50 grid sm:grid-cols-1">
       <p
         style={{ display: error ? "none" : "block" }}
         className="bg-red-100 h-11 text-center rounded-lg shadow-md container mx-auto">
@@ -49,13 +49,13 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
           X
         </span>
       </p>
-      <div className="w-2/4 m-auto mt-14">
+      <div className="lg:w-2/4 w-full  m-auto mt-14">
         <h1 className="text-center text-sky-800 text-bold">LOGIN</h1>
-        <form className="bg-teal-50 shadow-md place-self-center  rounded px-8 pt-6 pb-8 mb-4">
+        <form className="bg-teal-50 shadow-md place-self-center rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for="username">
+              >
               Username
             </label>
             <input
@@ -70,7 +70,7 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
           <div className="mb-6">
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
-              for="password">
+              >
               Password
             </label>
             <input

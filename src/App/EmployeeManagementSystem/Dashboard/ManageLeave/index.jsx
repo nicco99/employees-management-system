@@ -70,11 +70,11 @@ function ManageLeave() {
     </tr>
   ));
   return (
-    <div className="w-8/12 rounded shadow-md bg-teal-100 p-10 justify-center ">
+    <div className="rounded shadow-md bg-teal-100 sm:p-10 justify-center ">
       <h1 className="text-4xl text-center text-orange-400 mb-8">
         It's Leave management time😅😅🚀
       </h1>
-      <div className="text-xl text-center grid grid-cols-2 gap-x-8 text-blue-800">
+      <div className="text-xl text-center grid sm:grid-cols-2 sm:gap-x-8 text-blue-800">
         <div>
           All Members
           <table className="table-auto w-full">

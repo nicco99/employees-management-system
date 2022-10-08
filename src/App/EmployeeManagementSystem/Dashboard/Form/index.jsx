@@ -25,7 +25,7 @@ function Form() {
     navigate("/dashboard/view");
   }
   return (
-    <div className="w-8/12 rounded shadow-md bg-teal-100 p-10 justify-center">
+    <div className="rounded shadow-md bg-teal-100 sm:p-10 justify-center pb-4">
       <h1 className="text-4xl text-center text-orange-400 mb-8">
         New Employee ✍🏾✍🏾
       </h1>
@@ -40,6 +40,18 @@ function Form() {
             type="text"
             name="full_name"
             placeholder="Full Name"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Email:
+          </label>
+          <input
+            onChange={(e) => handleAdd(e)}
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text"
+            name="email"
+            placeholder="email address"
           />
         </div>
         <div className="mb-4">

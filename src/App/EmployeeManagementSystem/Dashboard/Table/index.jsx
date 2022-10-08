@@ -14,11 +14,11 @@ function Table() {
 
   let listOfEmployees = employees.map((emp) => <Tr key={emp.id} emp={emp} />);
   return (
-    <div className="w-8/12 rounded shadow-md bg-teal-100 p-11 justify-center">
-      <p className="text-orange-400 text-xl mb-8">
+    <div className="rounded shadow-md bg-teal-100 sm:p-1 mb-8">
+      <p className="text-orange-400 sm:text-xl mb-8">
         Click employee's name for more details
       </p>
-      <table className="table-auto w-full">
+      <table className="table-auto sm:w-full">
         <thead className="text-xs font-semibold uppercase text-blue-800 rounded-md bg-gray-50">
           <tr>
             <th className="p-2">

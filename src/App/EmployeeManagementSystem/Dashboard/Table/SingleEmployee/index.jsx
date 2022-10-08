@@ -26,6 +26,7 @@ function SingleEmployee() {
       },
       body: JSON.stringify({
         full_name: edit.full_name,
+        email: edit.email,
         department: edit.department,
         salary: edit.salary,
       }),
@@ -35,49 +36,54 @@ function SingleEmployee() {
   }
 
   return (
-    <div className="w-8/12 flex flex-col justify-evenly rounded shadow-md bg-teal-100 p-11">
+    <div className="rounded shadow-md bg-teal-100 sm:p-10 justify-center ">
       <p className="text-orange-400 text-xl mb-2">
         You can Edit employee's details here,, once done click save
       </p>
-      <div className="grid grid-cols-3 gap-5 pt-6 px-4">
-        <label className="text-center text-lime-600">
-          Full Names
-          <input
-            name="full_name"
-            onChange={(e) => handlechange(e)}
-            value={oneEmployee.full_name}
-            className="bg-fuchsia-300 text-red-500 rounded shadow-md h-28 pt-2 text-center"
-          />
-        </label>
-        <label className="text-center">
-          Department
-          <input
-            onChange={(e) => handlechange(e)}
-            name="department"
-            value={oneEmployee.department}
-            className="bg-blue-800 text-slate-50 rounded shadow-md h-28 pt-4 text-center"
-          />
-        </label>
-        <label className="text-center">
-          Salary
-          <input
-            onChange={(e) => handlechange(e)}
-            name="salary"
-            value={oneEmployee.salary}
-            className="bg-blue-300 rounded shadow-md h-28 pt-4 text-center"
-          />
-        </label>
+      <div className="grid sm:grid-cols-4 sm:gap-1 pt-6 px-4 pb-6 px-auto">
+        <label className="text-center text-black">Full Names</label>
+        <input
+          name="full_name"
+          onChange={(e) => handlechange(e)}
+          value={oneEmployee.full_name}
+          className="bg-fuchsia-400 text-black rounded shadow-md h-28 pt-2 text-center"
+        />
+
+        <label className="text-center">Department</label>
+        <input
+          onChange={(e) => handlechange(e)}
+          name="department"
+          value={oneEmployee.department}
+          className="bg-blue-400 text-black rounded shadow-md h-28 pt-4 text-center"
+        />
+
+        <label className="text-center">Email</label>
+
+        <input
+          onChange={(e) => handlechange(e)}
+          name="email"
+          value={oneEmployee.email}
+          className="bg-yellow-400 rounded shadow-md h-28 pt-4 text-center"
+        />
+        <label className="text-center">Salary</label>
+
+        <input
+          onChange={(e) => handlechange(e)}
+          name="salary"
+          value={oneEmployee.salary}
+          className="bg-orange-400 rounded shadow-md h-28 pt-4 text-center"
+        />
       </div>
-      <div className="flex flex-row flex-wrap justify-between">
-        <button
-          onClick={() => navigate(-1)}
-          className="bg-sky-300 float-right text-zinc-50 w-28 rounded shadow-2xl px-4 py-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 duration-300">
-          back
-        </button>
+      <div className="grid sm:grid-col-2 p-8 p-auto">
         <button
           onClick={(e) => handleSave(e)}
-          className="bg-sky-600 text-zinc-50 w-28 rounded shadow-2xl px-4 py-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+          className="bg-sky-600 text-zinc-50 w-28 rounded shadow-2xl mb-4 px-4 py-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
           Save
+        </button>
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-sky-300 float-right text-zinc-50 w-28 rounded shadow-2xl py-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-sky-600 duration-300">
+          back
         </button>
       </div>
     </div>
