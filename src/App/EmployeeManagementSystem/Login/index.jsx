@@ -26,7 +26,7 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
       inputData.username === loginInfo.username &&
       inputData.password === loginInfo.password
     ) {
-      setIsLoggedIn(isLoggedIn=>true);
+      setIsLoggedIn((isLoggedIn) => true);
 
       redirect("/dashboard");
     } else {
@@ -50,12 +50,24 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
         </span>
       </p>
       <div className="lg:w-2/4 w-full  m-auto mt-14">
-        <h1 className="text-center text-sky-800 text-bold">LOGIN</h1>
         <form className="bg-teal-50 shadow-md place-self-center rounded px-8 pt-6 pb-8 mb-4">
+          <div>
+            <svg
+              class="w-16 bg-white p-4 rounded-full items-center m-auto h-16"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+            <p className="text-center  rounded-full text-4xl">Admin</p>
+          </div>
           <div className="mb-4">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              >
+            <label className="block text-gray-700 text-sm font-bold mb-2">
               Username
             </label>
             <input
@@ -68,9 +80,7 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
             />
           </div>
           <div className="mb-6">
-            <label
-              className="block text-gray-700 text-sm font-bold mb-2"
-              >
+            <label className="block text-gray-700 text-sm font-bold mb-2">
               Password
             </label>
             <input
