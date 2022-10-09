@@ -43,7 +43,7 @@ function ManageLeave() {
 
   const empOnLeave = onLeave.map((item) => (
     <div key={item.id} className="grid grid-cols-2 gap-x-3 text-sm font-serif">
-      <span className="text-left text-sky-600">{item.full_name}</span>
+      <span className="text-center text-sky-600">{item.full_name}</span>
       <button onClick={() => handleEndLeave(item)} className=" text-violet-900">
         end leave
       </button>
