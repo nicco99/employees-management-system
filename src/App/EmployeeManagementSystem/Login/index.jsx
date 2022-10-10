@@ -53,7 +53,7 @@ function Login({ isLoggedIn, setIsLoggedIn }) {
         <form className="bg-teal-50 shadow-md place-self-center rounded px-8 pt-6 pb-8 mb-4">
           <div>
             <svg
-              class="w-16 bg-white p-4 rounded-full items-center m-auto h-16"
+              class="w-24 bg-white p-4 rounded-full items-center m-auto h-24"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
